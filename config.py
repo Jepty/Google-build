@@ -8,9 +8,9 @@ admin_ls = [286381231, 773859044] #
 
 bot_name = ''
 
-db_name = 'test_db'
-db_user = 'test'
-db_pass = 'g7f4Ta6M8M'
+db_name = 'build_db'
+db_user = 'builder'
+db_pass = 'f65R8JE4hm'
 
 path_tb = 'path_tb'
 path_tb_column = 'chat_id VARCHAR, parent VARCHAR, spread VARCHAR, workpath VARCHAR, cell_id VARCHAR'
