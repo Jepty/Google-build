@@ -212,9 +212,9 @@ def upl_more_photo(message):
             if upl_photo(src, file_info, parent_folder_id):
                 bot.send_message(message.chat.id, lang.text_photo_upl) #
                 os.system(f'rm {src}')
-                raise SystemExit
             else:
                 bot.send_message(message.chat.id, lang.text_upl_error)
+        os._exit(0)
     except:
         print(traceback.format_exc())
 
