@@ -55,13 +55,12 @@ def upl_more(cell_id): #p_id, t_id
 def get_adr():
     results = drive_service.files().list(pageSize=100,
     fields="nextPageToken, files(id, name, mimeType, parents)",
-    q="mimeType='application/vnd.google-apps.folder'").execute()
+    q="mimeType='application/vnd.google-apps.folder' and '1Z_lzWgyru0u0MNKsr6td3MoRwnkSFYAc' in parents").execute()
     get_kb = types.InlineKeyboardMarkup(row_width=1)
     for i in results['files']:
-        if i.get('parents') == None:
-            text = i['name']
-            get_butt = types.InlineKeyboardButton(text, callback_data=f"id {i['id']}")
-            get_kb.add(get_butt)
+        text = i['name']
+        get_butt = types.InlineKeyboardButton(text, callback_data=f"id {i['id']}")
+        get_kb.add(get_butt)
     return get_kb
 
 def get_work(chat_id, page): # SPREADSHEET_ID, f_id,

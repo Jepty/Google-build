@@ -1,10 +1,10 @@
 # config.py
 
-token = '1652220208:AAFm0QJZ_KrzfAlny_X7HXcaa7_b7ERNb2o'
+token = '1892145024:AAFQp_3fB4_hj0EJlYUBSK6lWeg0aNKhUHk'
 
 # WEBHOOK_PORT = 7775
 
-admin_ls = [286381231, 773859044] #
+admin_ls = [286381231, 773859044, 122144528] #
 
 bot_name = ''
 
